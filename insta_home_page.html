@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INSTAGRAM HOME PAGE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <!-- sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-black">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <div id="logo"></div>
+          <a href="#" class="sidebar_text" aria-current="true"><i class="bi bi-house-door"></i><svg
+              xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+            </svg><span>Home</span>
+          </a>
+          <a href="#" class="sidebar_text"><i class="bi bi-search"></i><svg xmlns="http://www.w3.org/2000/svg"
+              width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg><span>Search</span></a>
+          <a href="#" class="sidebar_text"><i class="bi bi-compass"></i><svg xmlns="http://www.w3.org/2000/svg"
+              width="30" height="30" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+              <path
+                d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+              <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
+            </svg><span>Explore
+              <a href="#" class="sidebar_text">
+                <i class="bi bi-camera-reels-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                  fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+                  <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  <path
+                    d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7z" />
+                </svg><span>Reels</span>
+              </a>
+              <a href="#" class="sidebar_text"><i class="bi bi-chat-dots"></i><svg xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                  <path
+                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  <path
+                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                </svg><span>Messages</span></a>
+              <a href="#" class="sidebar_text"><i class="bi bi-heart"></i><svg xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                </svg><span>Notifications</span></a>
+              <a href="#" class="sidebar_text"><i class="bi bi-plus-square"></i><svg xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg><span>Create</span></a>
+              <a href="#" class="sidebar_text"><i class="bi bi-person-circle"></i><svg
+                  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg><span>Profile</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <div class="container"> -->
+  <section>
+    <div id="left" style="margin-left: 50rem;">
+      <div class="left-side">
+        <div class="story">
+
+          <div class="stories">
+            <a href="# "> <img src="image/pic01.jpg" width="60" height="60" alt="jsrelglkjs"> </a>
+            <p>fmiuerij</p>
+          </div>
+          <div class="stories">
+            <a href="# "> <img src="image/pic01.jpg" width="60" height="60" alt="jsrelglkjs"> </a>
+            <p>fmiuerij</p>
+          </div>
+          <div class="stories">
+            <a href="# "> <img src="image/pic01.jpg" width="60" height="60" alt="jsrelglkjs"> </a>
+            <p>fmiuerij</p>
+          </div>
+          <div class="stories">
+            <a href="# "> <img src="image/pic01.jpg" width="60" height="60" alt="jsrelglkjs"> </a>
+            <p>fmiuerij</p>
+          </div>
+          <div class="stories">
+            <a href="# "> <img src="image/pic01.jpg" width="60" height="60" alt="jsrelglkjs"> </a>
+            <p>fmiuerij</p>
+          </div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post-title">
+          <div class="post-left">
+            <div class="image">
+              <img src="image/pic01.jpg" alt="" width="42" height="42">
+              <div class="post-right">
+                <i class="bi bi-three-dots-vertical"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+              </div>
+            </div>
+            <span class="details">
+              <p class="name">lorem</p>
+              <p class="location"> mahavoor</p>
+            </span>
+          </div>
+
+        </div>
+        <div class="post-content">
+          <img src="image/pic01.jpg" alt="" height="500" width="500">
+
+        </div>
+        <div class="post-footer">
+          <div class="like-share-comment">
+            <i class="bi bi-heart"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+            <i class="bi bi-chat"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+            </svg>
+            <i class="bi bi-send"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send"
+              viewBox="0 0 16 16">
+              <path
+                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+            </svg>
+          </div>
+          <div class="save">
+            <i class="bi bi-bookmark"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin: 10px;" fill="currentColor"
+              class="bi bi-bookmark" viewBox="0 0 16 16">
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            </svg>
+          </div>
+        </div>
+        <div class="post-footer-content">
+          <p class="likes"> 100 likes</p>
+          <p class="name"> sakil <span>Please followme</span></p>
+          <p class="comments"> view all 10 comments</p>
+          <p class="posting-time"> 2 hour ago</p>
+        </div>
+        <div class="add-comment">
+
+          <div class="left-side">
+
+            <input type="text" placeholder="add a comment...">
+            <i id="jsdfj" class="bi bi-emoji-smile"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path
+                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+            </svg>
+
+          </div>
+          <div class="right-side">
+            <p>Post</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post-title">
+          <div class="post-left">
+            <div class="image">
+              <img src="image/pic01.jpg" alt="" width="42" height="42" style="margin-top: 10px;">
+              <div class="post-right">
+                <i class="bi bi-three-dots-vertical"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+              </div>
+            </div>
+            <span class="details">
+              <p class="name">lorem</p>
+              <p class="location"> mahavoor</p>
+            </span>
+          </div>
+        </div>
+        <div class="post-content">
+          <img src="image/pic01.jpg" alt="" height="500" width="500">
+        </div>
+        <div class="post-footer">
+          <div class="like-share-comment">
+            <i class="bi bi-heart"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+            <i class="bi bi-chat"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+            </svg>
+            <i class="bi bi-send"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send"
+              viewBox="0 0 16 16">
+              <path
+                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+            </svg>
+          </div>
+          <div class="save">
+            <i class="bi bi-bookmark"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              style="margin: 10px;color: white;" class="bi bi-bookmark" viewBox="0 0 16 16">
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            </svg>
+          </div>
+        </div>
+        <div class="post-footer-content">
+          <p class="likes"> 100 likes</p>
+          <p class="name"> sakil <span>Please followme</span></p>
+          <p class="comments"> view all 10 comments</p>
+          <p class="posting-time"> 2 hour ago</p>
+        </div>
+        <div class="add-comment">
+          <div class="left-side">
+            <input type="text" placeholder="add a comment...">
+            <i id="jsdfj" class="bi bi-emoji-smile"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path
+                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+            </svg>
+          </div>
+          <div class="right-side">
+            <p>Post</p>
+          </div>
+        </div>
+      </div>
+      <div class="posts">
+        <div class="post-title">
+          <div class="post-left">
+            <div class="image">
+              <img src="image/pic01.jpg" alt="" width="42" height="42" style=" margin-top: 10px;">
+              <div class="post-right">
+                <i class="bi bi-three-dots-vertical"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+              </div>
+            </div>
+            <span class="details">
+              <p class="name">lorem</p>
+              <p class="location"> mahavoor</p>
+            </span>
+          </div>
+        </div>
+        <div class="post-content">
+          <img src="image/pic01.jpg" alt="" height="500" width="500">
+        </div>
+        <div class="post-footer">
+          <div class="like-share-comment">
+            <i class="bi bi-heart"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+            <i class="bi bi-chat"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+            </svg>
+            <i class="bi bi-send"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send"
+              viewBox="0 0 16 16">
+              <path
+                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+            </svg>
+          </div>
+          <div class="save">
+            <i class="bi bi-bookmark"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin: 10px;" fill="currentColor"
+              class="bi bi-bookmark" viewBox="0 0 16 16">
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            </svg>
+          </div>
+        </div>
+        <div class="post-footer-content">
+          <p class="likes"> 100 likes</p>
+          <p class="name"> sakil <span>Please followme</span></p>
+          <p class="comments"> view all 10 comments</p>
+          <p class="posting-time"> 2 hour ago</p>
+        </div>
+        <div class="add-comment">
+          <div class="left-side">
+            <input type="text" placeholder="add a comment...">
+            <i id="jsdfj" class="bi bi-emoji-smile"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path
+                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
+            </svg>
+          </div>
+          <div class="right-side">
+            <p>Post</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rightside  -->
+
+    <div class="right-side">
+      <div class="profile-title">
+        <div class="profile-left">
+          <div class="image">
+            <img src="image/pic01.jpg" alt="" height="56" width="56">
+          </div>
+          <div class="details">
+            <p class="name">lorem</p>
+            <p class="surname"> lorem@fgff</p>
+          </div>
+        </div>
+        <div class="profile-right">
+          <p>Switch</p>
+        </div>
+      </div>
+      <div class="suggestions">
+        <p>Suggestions for you</p>
+        <p style="padding-left: 162px;">See All</p>
+      </div>
+      <div class="suggestion-title">
+        <div class="suggestion-left">
+          <div class="image">
+            <img src="image/pic01.jpg" alt="" height="40" width="40">
+          </div>
+          <div class="details">
+            <p class="name"> lorem</p>
+            <p class="location"> followed by Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="suggestion-right">
+          <p style="padding-left: 162px;">fallow</p>
+        </div>
+      </div>
+      <div class="suggestion-title">
+        <div class="suggestion-left">
+          <div class="image">
+            <img src="image/pic01.jpg" alt="" height="40" width="40">
+          </div>
+          <div class="details">
+            <p class="name"> lorem</p>
+            <p class="location"> followed by Lorem </p>
+          </div>
+        </div>
+        <div class="suggestion-right">
+          <p style="padding-left: 162px;">fallow</p>
+        </div>
+      </div>
+      <div class="suggestion-title">
+        <div class="suggestion-left">
+          <div class="image">
+            <img src="image/pic01.jpg" alt="" height="40" width="40">
+          </div>
+          <div class="details">
+            <p class="name"> lorem</p>
+            <p class="location"> followed by Lorem </p>
+          </div>
+        </div>
+        <div class="suggestion-right">
+          <p style="padding-left: 162px;">fallow</p>
+        </div>
+        <div class="suggestion-title">
+          <div class="suggestion-left">
+            <div class="image">
+              <img src="image/pic01.jpg" alt="" height="40" width="40">
+            </div>
+            <div class="details">
+              <p class="name"> lorem</p>
+              <p class="location"> followed by Lorem </p>
+            </div>
+          </div>
+          <div class="suggestion-right">
+            <p style="padding-left: 162px;">fallow</p>
+          </div>
+          <div class="suggestion-title">
+            <div class="suggestion-left">
+              <div class="image">
+                <img src="image/pic01.jpg" alt="" height="40" width="40">
+              </div>
+              <div class="details">
+                <p class="name"> lorem</p>
+                <p class="location"> followed by Lorem </p>
+              </div>
+            </div>
+            <div class="suggestion-right">
+              <p style="padding-left: 162px;">fallow</p>
+            </div>
+            <!-- right-side footer  -->
+
+            <footer class="right-side-footer">
+              <div class="service">
+                <ul>
+                  <li>About </li>
+                  <li>Help </li>
+                  <li>Press </li>
+                  <li>API </li>
+                  <li>Jobs </li>
+                  <li>Privacy </li>
+                  <li>Terms </li>
+                </ul>
+                <ul style="margin-top: -28px;">
+                  <li>Location </li>
+                  <li>Language </li>
+                  <li>MetaVerified</li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+</html>
