@@ -7,72 +7,405 @@
   <title>INSTAGRAM HOME PAGE</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <style>
-    
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* box-shadow: 1px 3px 5px 0 rgba(255, 254, 254, 0.987), 0 2px 10px 0 rgb(245, 243, 243); */
+  width: 240px;
+  z-index: 600;
+  border-right: 2px solid rgb(210, 204, 204);
+  
+  
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar .active {
+  border-radius: 5px;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  /* Scrollable contents if viewport is shorter than content. */
+}
+.text1{
+  color: #000000;
+}
+#logo {
+  background-image: url("https://static.cdninstagram.com/rsrc.php/v3/y-/r/yXM3FgMdVNX.png");
+  background-position: 0px -52px;
+  background-size: auto;
+  width: 175px;
+  height: 51px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: -39px;
+  margin-bottom: 33px;
+  background-color: #ffffff;
+
+}
+
+.bi {
+  margin: 10px;
+}
+
+section {
+  padding: 30px 300px;
+  /* background-color: #d45f5f; */
+  display: flex;
+  margin-left: -304px;
+}
+
+.left-side {
+  width: 65%;
+}
+
+.story {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  /* box-shadow: 1px 3px 5px 0 rgb(255, 254, 254), 0 2px 10px 0 rgb(245, 243, 243); */
+  border: 2px solid rgb(196, 192, 192);
+  border-radius: 3px;
+  width: 30rem;
+  height: 7rem;
+  margin-left: -1px;
+}
+
+.stories {
+  padding: 10px;
+}
+
+.story .stories a img {
+  border-radius: 50%;
+  border: 2px solid #c62d8f;
+  padding: 1px;
+  object-fit: cover;
+}
+
+.story .stories p {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(30, 26, 26);
+}
+
+.right-side {
+  width: 35%;
+}
+
+/* post */
+
+.posts {
+  width: 26.5rem;
+  border-radius: 3px;
+  margin-top: 5px;
+  border: 2px solid rgb(218, 205, 205);
+
+}
+
+.post .post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.post .post-title .post-left {
+  display: flex;
+  align-items: center;
+
+}
+
+.image {
+  margin: 16px;
+
+
+}
+
+.bi {
+  float: right;
+  margin-top: -34px;
+}
+
+.image img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.details .name {
+  padding-bottom: 2px;
+  font-weight: bold;
+  margin-left: 68px;
+  margin-top: -50px;
+  color: #000000;
+}
+
+.location {
+  margin-left: 65px;
+  margin-top: -23px;
+}
+
+
+.post-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-share-comment svg {
+  font-size: 12px;
+  margin: 10px;
+  margin-left: 10px;
+  float: left;
+  color: #0c0b0b;
+}
+
+.post-footer-content {
+  padding: 0 16px 16px 16px;
+  font-size: 12px;
+}
+
+.post-footer-content p {
+  margin-bottom: 1px;
+  color: #0a0909;
+}
+
+.likes {
+  margin-bottom: 8px;
+}
+
+.bi-bookmark {
+  margin: 10px;
+  color: rgb(10, 10, 10);
+}
+
+.name {
+  font-weight: 600;
+  margin-top: -1px;
+}
+
+.post-footer-content span {
+  margin: 10px;
+  font-weight: normal;
+
+}
+
+.posting-time {
+  font-size: 10px;
+}
+
+.add-comment {
+  padding: 16px;
+  border-top: 1px solid #efefef;
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.right-side {
+  margin-left: -13px;
+  margin-top: 4px;
+  position: fixed;
+  right: -15px;
+ 
+  
+}
+
+.right-side .profile-title {
+  display: flex;
+  text-align: center;
+}
+
+.right-side .profile-title .profile-left {
+  display: flex;
+  text-align: center;
+}
+
+.right-side .profile-title .profile-left .name {
+  margin: auto;
+  text-align: center;
+  margin-left: -34px;
+  margin-top: 19px;
+  color: #100f0f;
+}
+
+.surname {
+  margin-top: -9px;
+  color: darkgray;
+}
+
+.profile-right p {
+  margin-left: 159px;
+  margin-top: 24px;
+  color: #000000;
+}
+
+.suggestions {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: -10px;
+  color: #646161;
+}
+
+
+.suggestion-right {
+  float: right;
+  margin-right: 278px;
+  margin-bottom: 61px;
+  margin-top: -50px;
+  color: blue;
+}
+
+.details .location {
+  margin-left: 65px;
+  margin-top: -23px;
+  font-size: 11px;
+  color: rgb(40, 37, 37);
+}
+
+.suggestion-title .suggestion-left .details .name {
+  margin-top: -67px;
+}
+
+.suggestion-title .suggestion-left .image img {
+  margin-bottom: 9px;
+}
+
+.right-side-footer {
+  height: 10rem;
+  width: 25rem;
+  box-sizing: border-box;
+
+}
+
+.right-side-footer .service ul {
+  display: flex;
+  list-style: none;
+
+}
+
+.right-side-footer .service ul li {
+  padding: 5px;
+  color: #494646;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.sidebar_text {
+  color: #efefef;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sidebar_text span {
+  float: right;
+  margin-right: 20px;
+}
+
+.sidebar_text svg {
+  float: left;
+  margin-top: 2px;
+
+}
   </style>
 </head>
+
 <body>
   <header>
     <!-- sidebar -->
-    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-black">
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
       <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
           <div id="logo"></div>
-          <a href="#" class="sidebar_text" aria-current="true"><i class="bi bi-house-door"></i><svg
+          <a href="#" class="sidebar_text" aria-current="true"></i><svg class="text1"
               xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door"
               viewBox="0 0 16 16">
               <path
                 d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
-            </svg><span>Home</span>
+            </svg><span class="text1">Home</span>
           </a>
-          <a href="#" class="sidebar_text"><i class="bi bi-search"></i><svg xmlns="http://www.w3.org/2000/svg"
+          <a href="#" class="sidebar_text"><svg class="text1" xmlns="http://www.w3.org/2000/svg"
               width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg><span>Search</span></a>
-          <a href="#" class="sidebar_text"><i class="bi bi-compass"></i><svg xmlns="http://www.w3.org/2000/svg"
+            </svg><span class="text1">Search</span></a>
+          <a href="#" class="sidebar_text"><svg class="text1" xmlns="http://www.w3.org/2000/svg"
               width="30" height="30" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
               <path
                 d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
               <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z" />
-            </svg><span>Explore
+            </svg><span class="text1">Explore</span>
               <a href="#" class="sidebar_text">
-                <i class="bi bi-camera-reels-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                <svg class="text1" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                   fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
                   <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                   <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                   <path
                     d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7z" />
-                </svg><span>Reels</span>
+                </svg><span class="text1">Reels</span>
               </a>
-              <a href="#" class="sidebar_text"><i class="bi bi-chat-dots"></i><svg xmlns="http://www.w3.org/2000/svg"
+              <a href="#" class="sidebar_text"><svg class="text1" xmlns="http://www.w3.org/2000/svg"
                   width="30" height="30" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
                   <path
                     d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                   <path
                     d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
-                </svg><span>Messages</span></a>
-              <a href="#" class="sidebar_text"><i class="bi bi-heart"></i><svg xmlns="http://www.w3.org/2000/svg"
+                </svg><span class="text1">Messages</span></a>
+              <a href="#" class="sidebar_text"><svg class="text1" xmlns="http://www.w3.org/2000/svg"
                   width="30" height="30" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                   <path
                     d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                </svg><span>Notifications</span></a>
-              <a href="#" class="sidebar_text"><i class="bi bi-plus-square"></i><svg xmlns="http://www.w3.org/2000/svg"
+                </svg><span class="text1">Notifications</span></a>
+              <a href="#" class="sidebar_text"><svg  class="text1" xmlns="http://www.w3.org/2000/svg"
                   width="30" height="30" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
                   <path
                     d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                   <path
                     d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                </svg><span>Create</span></a>
-              <a href="#" class="sidebar_text"><i class="bi bi-person-circle"></i><svg
+                </svg><span class="text1">Create</span></a>
+              <a href="#" class="sidebar_text"><svg class="text1"
                   xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                   class="bi bi-person-circle" viewBox="0 0 16 16">
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                   <path fill-rule="evenodd"
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                </svg><span>Profile</span></a>
+                </svg><span class="text1">Profile</span></a>
         </div>
       </div>
     </nav>
@@ -102,7 +435,6 @@
           </div>
           <div class="stories">
             <a href="# "> <img src="image/pic01.jpg" width="60" height="60" alt="jsrelglkjs"> </a>
-            <p>fmiuerij</p>
           </div>
         </div>
       </div>
@@ -139,13 +471,13 @@
               <path
                 d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
             </svg>
-            <i class="bi bi-chat"></i>
+           
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat"
               viewBox="0 0 16 16">
               <path
                 d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
             </svg>
-            <i class="bi bi-send"></i>
+          
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send"
               viewBox="0 0 16 16">
               <path
@@ -153,7 +485,7 @@
             </svg>
           </div>
           <div class="save">
-            <i class="bi bi-bookmark"></i>
+           
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin: 10px;" fill="currentColor"
               class="bi bi-bookmark" viewBox="0 0 16 16">
               <path
@@ -172,7 +504,7 @@
           <div class="left-side">
 
             <input type="text" placeholder="add a comment...">
-            <i id="jsdfj" class="bi bi-emoji-smile"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
               fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
               <path
@@ -192,7 +524,7 @@
             <div class="image">
               <img src="image/pic01.jpg" alt="" width="42" height="42" style="margin-top: 10px;">
               <div class="post-right">
-                <i class="bi bi-three-dots-vertical"></i>
+               
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                   class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                   <path
@@ -211,19 +543,19 @@
         </div>
         <div class="post-footer">
           <div class="like-share-comment">
-            <i class="bi bi-heart"></i>
+           
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
               viewBox="0 0 16 16">
               <path
                 d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
             </svg>
-            <i class="bi bi-chat"></i>
+           
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat"
               viewBox="0 0 16 16">
               <path
                 d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
             </svg>
-            <i class="bi bi-send"></i>
+            
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send"
               viewBox="0 0 16 16">
               <path
@@ -450,4 +782,5 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
